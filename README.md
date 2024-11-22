@@ -1,4 +1,4 @@
-# Zoho CRM Python Library
+# Zoho API Python Library
 This is a Python library for using the Zoho API's. This will house all the code for the Zoho API's. This includes OAuth2 authentication, Zoho CRM, Zoho Books, Zoho Desk, Zoho Analytics
 
 ### What it does ###
@@ -13,10 +13,10 @@ This is a Python library for using the Zoho API's. This will house all the code 
 
 ### Mac ###
 1. Install Python with brew
-   ```bash
-   $ brew search python
-   $ brew install python3.13
-   ```
+    ```bash
+    $ brew search python
+    $ brew install python3.13
+    ```
 2. Install virtual environment tool:
     ```bash
     $ brew install venv
@@ -29,12 +29,47 @@ This is a Python library for using the Zoho API's. This will house all the code 
 4. Clone repo:
     ```bash
     $ git clone https://github.com/epunx2/z-crm-python.git
-  '''
+    '''
 5. Install packages
     ```bash
     $ pip install package-name
     ```
 6. Generate requirements.txt
+    ```bash
+    $ pip freeze > requirements.txt
+    ```
+
+### Linux ###
+Instructions are for apt. Tested on Debian alpine.
+1. Update apt package manager
+    ```bash
+    $ apt update
+    ```
+2. Install Python - this will install latest version for distro
+    ```bash
+    $ apt install python3
+    ```
+3. Install virtual environment tool:
+    ```bash
+    $ apt install python3-venv
+    ```
+4. Setup virtual environment(Virtual envs are optional. You may have to setup source package):
+    ```bash
+    $ python3 -m venv env
+    ```
+5. Clone repo:
+    ```bash
+    $ git clone https://github.com/epunx2/z-crm-python.git
+    '''
+5. Install pip
+    ```bash
+    $ apt install python3-pip
+    ```
+6. Install packages
+    ```bash
+    $ pip install package-name
+    ```
+7. Generate requirements.txt
     ```bash
     $ pip freeze > requirements.txt
     ```
