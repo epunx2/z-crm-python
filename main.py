@@ -6,12 +6,11 @@ import logging
 logger = logging.getLogger()
 
 def lambda_handler(event, context):
-
   response = process()
   return response
 
 def process():
-  print("Hello World")
+  return "Hello World"
 
 def main():
   response = process()
