@@ -10,6 +10,7 @@ def lambda_handler(event, context):
   return response
 
 def process():
+  logger.warning("Running Process function")
   return "Hello World"
 
 def main():
